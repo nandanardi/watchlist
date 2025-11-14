@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+     --primary-color: #1F1F1F;
+    --secondary-color: #A90008;
+    --terc-collor: 960007;
+    --text-dark: #0f172a;
+    --text-light: #CCCCCC;
+    --extra-light: #f8fafc;
+    --white: #ffffff;
+    --gradient: linear-gradient(to right bottom, #A90008, #680005);
+    --ff: 'Bebas Neue', sans-serif;
+    /*define 1rem = 16px */
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+ .section_container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+}
+
+header{
+    background-color: var(--primary-color);
+    height: 100px;
+}
+
+.navbar_container{
+    max-width: 1440px;
+    background-color: var(--secondary-color);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(35%);
+}
+
+.navbar_logo img{
+    display: block;
+    margin-top: 5px;
+}
+
+.navbar_links{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    color: var(--text-dark);
+}
+
+.navbar_links a{
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.navbar_links a:hover{
+   color: var(--text-light);
+   border-bottom: 2px solid var(--primary-color);
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--secondary-color);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 0.1rem;
+    margin-left: 2rem;
+
+}
+
+.search-box input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: none;
+    color: var(--text-dark);
+    width: 230px;
+    border-bottom: 2px solid var(--primary-color);
+    
+}
+
+.search{
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
